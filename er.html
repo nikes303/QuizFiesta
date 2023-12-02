@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub page</title>
+    <style>
+        @keyframes blink {
+            0% {
+                color: darkmagenta;
+            }
+
+            50% {
+                color: darkblue;
+            }
+
+            100% {
+                color:deeppink;
+            }
+        }
+
+        body {
+            text-align: center; 
+            background-image: url(K6m.gif);
+            background-repeat: no-repeat;
+            background-size:cover;
+            text-align: center; 
+        }
+
+        .blinking-text {
+            font-family: cursive;
+            font-size: 30px; 
+            font-weight: bold;
+            padding: 20px 40px;
+            border: 2px solid lightblue; 
+            border-radius: 50px; 
+            background-color: #f0f8ff;
+            cursor: pointer;
+            display: inline-block;
+            animation: blink 2s infinite;
+            box-shadow: 10px 10px 40px maroon
+        }
+        .yo{
+            margin-top: 50px;
+            background-color: bisque;
+            border-radius: 15px;
+            border: 2px darkmagenta;
+            width:1500px;
+            font-family:fantasy;
+            font-size: 20px;
+            color:brown;
+            box-shadow: 10px 10px 40px gray;
+            
+        }
+        ul{
+            margin-bottom: 20px;
+            list-style-type:none;
+        }
+.hi{
+    
+    padding: 20px 50px;
+    font-family: candara;
+    font-size:25px;
+    border-radius:15px;
+    cursor: pointer;}
+.hi:hover{
+    box-shadow: 10px 10px 40px rgb(66, 51, 51);
+}
+.hi:active{
+    border:4px white;
+    color:deeppink;
+    background-color:darkslateblue;
+} 
+    </style>
+</head>
+
+<body>
+    <button class="blinking-text">What is it about?</button>
+    <div class="yo">
+       <ul>
+        <li>The quiz is based on the topics- arts, science/technology and general knowledge.</li>
+        <br>
+        <li>Each one of the topics has five questions each.</li>
+        <br>
+        <li>The questions will be mixed with different topics together.</li>
+        <br>
+        <li>Don't worry guys! this quiz contains questions which are general.</li>
+        <br>
+        <li>This quiz will be timed for 1 minute(15 questions).</li>
+        <br>
+        <li>And last but not least, it is important to wear your quiz hat on and ace the questions coming your way!</li>
+        <br>
+        <li style="color: blueviolet;font-size: 25px;font-family: cursive;">GOOD LUCK!</li>
+       </ul>
+       
+    </div>
+    <a href="quiz.html"><button class="hi"><b>Start now!</b></button></a>
+
+</body>
+
+</html>

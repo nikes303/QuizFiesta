@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+              body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            background-image: url(K7m.gif);            
+        }
+        h1 {
+            background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-8&color=gray);
+            
+        color:lightcyan;
+        }
+        .a{
+            background-color: darkgoldenrod;
+        }
+        #quiz-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color:ivory;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 40px;
+            border: 10px;
+            font-family:candara;
+            font-size: large;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        #review-btn{
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family:'Courier New', Courier, monospace;
+            margin-right: 30px;
+            border-radius:15px;
+        }
+        #submit-btn{
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family:'Courier New', Courier, monospace;
+            margin-right: 30px;
+            border-radius:15px;
+        }
+        #review-btn:hover{
+            box-shadow: 10px 10px 40px grey;            
+        }
+        #review-btn:active{
+            color: white;
+            background-color: black;
+            border-color: white;
+        }
+        #submit-btn:hover{
+            box-shadow: 10px 10px 40px grey;            
+        }
+        #submit-btn:active{
+            color: white;
+            background-color: black;
+            border-color: white;
+        }
+
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="quiz-container">
+    <h1>Multiple Choice Quiz</h1>
+    <form id="quiz-form">
+        
+            
+        <table>
+        <tr><th>Time:</th>
+        <th id="timer">Start now </th></tr> </table>  
+
+        <table>
+            <tr>
+                <th colspan="2">Question 1: In which sport is the term "hat-trick" commonly used?</th>
+            </tr>
+            <tr>
+                <td><label><input type="radio" name="q1" value="a">a) Soccer</label></td>
+                <td><label><input type="radio" name="q1" value="b">b) Cricket</label></td>
+            </tr>
+            <tr>
+                <td><label><input type="radio" name="q1" value="c">c) Basketball</label></td>
+                <td><label><input type="radio" name="q1" value="d">d) Tennis</label></td>
+            </tr>
+        </table>
+        
+        <br>
+        <table> <tr><th colspan="2">Question 2:  Which traditional Indian art form involves the painting of intricate designs 
+            on the hands and feet, often done during festivals and weddings?</th> </tr>
+            <tr><td><label><input type="radio" name="q2" value="a">a) Kalamkari</label></td>
+                    <td><label><input type="radio" name="q2" value="b">b) Madhubani</label></td></tr>
+            <tr><td><label><input type="radio" name="q2" value="c">c) Henna (Mehndi)</label></td>
+                <td><label><input type="radio" name="q2" value="d">d) Warli</label></td></td> </tr></table>
+        <br>
+        <table> <tr><th colspan="2">Question 3:  Who is known as the "father of modern physics" for his contributions to
+            the development of quantum theory?</th> </tr>
+           <tr><td><label><input type="radio" name="q3" value="a">a) Max Planck </label></td>
+                <td><label><input type="radio" name="q3" value="b">b) Werner Heisenberg </label></td></tr>
+            <tr><td><label><input type="radio" name="q3" value="c">c) Niels Bohr </label></td>
+                <td><label><input type="radio" name="q3" value="d">d) Erwin Schrödinger </label></td> </tr></table>
+       <br>
+       <table>  
+        <tr>
+            <th colspan="2">Question 4: Which planet is known as the "Red Planet"?</th></tr>
+        <tr>    <td>
+                <label><input type="radio" name="q4" value="a">a) Venus</label></td>
+            <td><label><input type="radio" name="q4" value="b">b) Mars</label></td></tr> 
+        <tr>    <td><label><input type="radio" name="q4" value="c">c) Jupiter</label></td>
+            <td><label><input type="radio" name="q4" value="d">d) Saturn</label>
+            </td>
+        </tr>
+    </table> 
+    <br>
+    <table> <tr><th colspan="2">Question 5:  Who is the renowned Indian artist known for his modern abstract paintings and 
+        co-founding the Progressive Artists' Group in Bombay (now Mumbai)?</th> </tr>
+        <tr><td><label><input type="radio" name="q5" value="a">a) M.F. Husain</label></td>
+            <td>    <label><input type="radio" name="q5" value="b">b) S.H. Raza</label></td></tr>
+        <tr><td>  <label><input type="radio" name="q5" value="c">c) Amrita Sher-Gil</label></td> 
+            <td><label><input type="radio" name="q5" value="d">d) Tyeb Mehta</label></td> </tr></table>
+    <br>
+    <table> <tr><th colspan="2">Question 6:  What is the powerhouse of the cell, responsible for producing energy?</th> </tr>
+        <tr><td><label><input type="radio" name="q6" value="a">a) Nucleus</label></td>
+            <td><label><input type="radio" name="q6" value="b">b) Mitochondria </label></td></tr>
+        <tr><td><label><input type="radio" name="q6" value="c">c) Endoplasmic reticulum </label></td>
+            <td><label><input type="radio" name="q6" value="d">d) Golgi apparatus </label></td> </tr></table>
+    <br>
+    <table>     
+        <tr>
+            <th colspan="2">Question 7: Which ocean is the largest on Earth?</th></tr>
+        <tr>    <td>
+                <label><input type="radio" name="q7" value="a">a) Pacific</label></td>
+            <td><label><input type="radio" name="q7" value="b">b) Atlantic</label></td></tr>
+            <tr><td><label><input type="radio" name="q7" value="c">c) Indian</label></td>
+            <td><label><input type="radio" name="q7" value="d">d) Arctic</label>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table> <tr><th colspan="2">Question 8:  The Ajanta Caves, known for their ancient Buddhist rock-cut sculptures 
+        and paintings, are located in which Indian state?</th> </tr>
+        <tr><td><label><input type="radio" name="q8" value="a">a) Maharashtra</label></td>
+            <td>    <label><input type="radio" name="q8" value="b">b) Uttar Pradesh</label></td></tr>
+            <tr><td><label><input type="radio" name="q8" value="c">c) Madhya Pradesh</label></td>
+            <td>    <label><input type="radio" name="q8" value="d">d) Karnataka</label></td> </tr></table>
+    <br>
+    <table> <tr><th colspan="2">Question 9:  In which year did the first human set foot on the moon during the Apollo 11 mission?</th> </tr>
+        <tr><td><label><input type="radio" name="q9" value="a">a) 1965</label></td>
+             <td>   <label><input type="radio" name="q9" value="b">b) 1969</label></td></tr>
+         <tr><td>   <label><input type="radio" name="q9" value="c">c) 1973</label></td>
+             <td>   <label><input type="radio" name="q9" value="d">d) 1981</label></td> </tr></table>
+    <br>
+    <table>  
+        <tr>
+            <th colspan="2">Question 10: What programming language is often used for web development?</th></tr>
+            <tr>   <td>
+                <label><input type="radio" name="q10" value="a">a) Python</label></td>
+            <td>    <label><input type="radio" name="q10" value="b">b) JavaScript</label></td></tr>
+            <tr><td>    <label><input type="radio" name="q10" value="c">c) Java</label></td>
+              <td>  <label><input type="radio" name="q10" value="d">d) HTML</label>
+            </td>
+        </tr>
+    </table>
+    <br>
+            
+                    <table> <tr><th colspan="2">Question 11:  What classical dance form originated in the state of Kerala 
+                        and is known for its graceful movements and elaborate costumes?</th> </tr>
+                        <tr><td><label><input type="radio" name="q11" value="a">a) Kathak</label></td>
+                             <td>   <label><input type="radio" name="q11" value="b">b) Bharatanatyam</label></td></tr>
+                         <tr><td>   <label><input type="radio" name="q11" value="c">c) Kathakali</label></td>
+                             <td>   <label><input type="radio" name="q11" value="d">d) Odissi</label></td> </tr></table>
+                    <br>
+                    <table> <tr><th colspan="2">Question 12:  Who developed the theory of general relativity?</th> </tr>
+                        <tr><td><label><input type="radio" name="q12" value="a">a) Isaac Newton</label></td>
+                             <td>   <label><input type="radio" name="q12" value="b">b) Albert Einstein</label></td></tr>
+                          <tr><td>  <label><input type="radio" name="q12" value="c">c) Stephen Hawking</label></td>
+                             <td>   <label><input type="radio" name="q12" value="d">d) Niels Bohr</label></td> </tr></table>
+                    <br>
+                    <table> <tr><th colspan="2">Question 13: Which is the largest planet in the universe?</th> </tr>
+                        <tr><td><label><input type="radio" name="q13" value="a">a) Venus</label></td>
+                             <td>   <label><input type="radio" name="q13" value="b">b) Jupiter</label></td></tr>
+                        <tr><td>    <label><input type="radio" name="q13" value="c">c) Mars</label></td>
+                             <td>   <label><input type="radio" name="q13" value="d">d) Saturn</label></td> </tr></table>
+                                <br>
+
+                        <table> <tr><th colspan="2">Question 14:  Who is often referred to as the "Father of Indian Cinema"?</th> </tr>
+            <tr><td><label><input type="radio" name="q14" value="a">a) Raj Kapoor</label></td>
+            <td>   <label><input type="radio" name="q14" value="b">b) Satyajit Ray</label></td></tr>
+              <tr><td>  <label><input type="radio" name="q14" value="c">c) Dadasaheb Phalke</label></td>
+                   <td> <label><input type="radio" name="q14" value="d">d) Guru Dutt</label></td> </tr></table>
+        <br>
+        
+        
+       
+        
+        <table> <tr><th colspan="2">Question 15:  What is the smallest unit of matter that retains the properties of an element?</th> </tr>
+            <tr><td><label><input type="radio" name="q15" value="a">a) Atom</label></td>
+                  <td>  <label><input type="radio" name="q15" value="b">b) Molecule</label></td></tr>
+             <tr><td>   <label><input type="radio" name="q15" value="c">c) Proton</label></td>
+                 <td>   <label><input type="radio" name="q15" value="d">d) Electron</label></td> </tr></table>
+        <br>
+        
+        
+       
+        
+        <button type="button" id="submit-btn" onclick="submitQuiz()"><b>Submit</b></button>
+        <button type="button" id="review-btn" onclick="reviewQuiz()"><b>Review</b></button>
+    
+    </form>
+    <div id="result"></div>
+</div>
+
+<script>
+    var timeLeft = 60; // seconds
+    var timer;
+
+    function startTimer() {
+        timer = setInterval(function () {
+            document.getElementById("timer").innerHTML = timeLeft + " seconds remaining";
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+                submitQuiz();
+
+                
+            } else {
+                timeLeft--;
+            }
+        }, 1000);
+    }
+    function submitQuiz() {
+    clearInterval(timer); // Stop the timer
+    var form = document.getElementById("quiz-form");
+    var elements = form.elements;
+    var correctAnswers = 0;
+
+    
+    var correctOptions = ["b", "c", "a", "b", "b", "b", "a", "a", "b", "b", "c", "b", "b", "c", "a"];
+
+    for (var i = 1; i <= 15; i++) {
+        var selectedOption = elements["q" + i].value;
+        if (selectedOption === correctOptions[i - 1]) {
+            correctAnswers++;
+        }
+    }
+
+    var resultText = "Results: " + correctAnswers + " out of 15 questions are correct!";
+    document.getElementById("result").innerHTML = resultText;
+}
+
+
+
+
+    function reviewQuiz() {
+        var form = document.getElementById("quiz-form");
+        var elements = form.elements;
+        var reviewText = "<h3>Review Answers</h3>";
+
+        for (var i = 1; i <= 15; i++) {
+            var selectedOption = elements["q" + i].value;
+            var correctAnswer = ""; // Replace with the correct answer for each question
+
+            switch (i) {
+                case 1:
+                    correctAnswer = "b: Cricket";
+                    break;
+                case 2:
+                    correctAnswer = "c: Henna (Mehndi)";
+                    break;
+                case 3:
+                    correctAnswer = "a: Max Planck";
+                    break;
+                case 4:
+                    correctAnswer = "b: Mars";
+                    break;
+                case 5:
+                    correctAnswer = "b: S.H. Raza";
+                    break;
+                case 6:
+                    correctAnswer = "b: Mitochondria";
+                    break;  
+                case 7:
+                    correctAnswer = "a: Pacific";
+                    break;
+                case 8:
+                    correctAnswer = "a: Maharashtra";
+                    break;
+                case 9:
+                    correctAnswer = "b: 1969 ";
+                    break;
+                case 10:
+                    correctAnswer = "b: JavaScript";
+                    break;
+                case 11:
+                    correctAnswer = "c: Kathakali";
+                    break;
+                case 12:
+                    correctAnswer = "b: Albert Einstein";
+                    break;
+                case 13:
+                    correctAnswer = "b: Jupiter";
+                    break;
+                case 14:
+                    correctAnswer = "c: Dadasaheb Phalke";
+                    break;
+                case 15:
+                    correctAnswer = "a: Atom ";
+                    break;
+
+            }
+
+            reviewText += "<p><strong>Question " + i + ":</strong> Your answer: " + selectedOption + ", Correct answer: " + correctAnswer + "</p>";
+        }
+
+        document.getElementById("result").innerHTML = reviewText;
+    }
+
+    // Start the timer when the page loads
+    window.onload = startTimer;
+</script>
+
+</body>
+</html>
+
